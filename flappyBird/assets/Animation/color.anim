@@ -1,0 +1,77 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "color",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "color": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 254,
+            "b": 254,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.06666666666666667,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 213,
+            "g": 33,
+            "b": 33,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.13333333333333333,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 110,
+            "b": 35,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.2,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 247,
+            "g": 215,
+            "b": 17,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.26666666666666666,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 61,
+            "g": 234,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 6,
+            "g": 70,
+            "b": 251,
+            "a": 255
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}
