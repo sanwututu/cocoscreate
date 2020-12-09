@@ -1,2 +1,5 @@
 这是一个cocoscreate的git!
 今后我会在这里提交我的项目更新。
+
+2020.12.9提交经典flappybird游戏！
+熟悉cocoscreate各种功能。
