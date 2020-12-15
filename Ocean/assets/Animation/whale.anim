@@ -1,0 +1,49 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "whale",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.28888888888888886,
+  "sample": 45,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "5dd6f23e-f738-4dcf-9484-9e0c7b00961c"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "1d0ea904-18cf-45db-afe5-21be8b6b6b26"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "4d3d745a-03e8-41e2-b202-c7310cd823d9"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "1d0ea904-18cf-45db-afe5-21be8b6b6b26"
+            }
+          },
+          {
+            "frame": 0.26666666666666666,
+            "value": {
+              "__uuid__": "5dd6f23e-f738-4dcf-9484-9e0c7b00961c"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
