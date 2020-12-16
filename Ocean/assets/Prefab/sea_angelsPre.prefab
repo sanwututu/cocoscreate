@@ -70,8 +70,8 @@
         0,
         0,
         1,
-        0.5,
-        0.5,
+        0.4,
+        0.4,
         1
       ]
     },
@@ -147,6 +147,9 @@
       "__id__": 1
     },
     "_enabled": true,
+    "boomAudio": {
+      "__uuid__": "71ebb1e8-5810-4728-bf80-992f3fe1d5bf"
+    },
     "_id": ""
   },
   {
@@ -301,9 +304,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "642ff941-7138-48a2-a720-7d9f1effe046"
+      "__uuid__": "0d820921-7196-43f6-9d50-d323cec5034b"
     },
-    "fileId": "e0fR0I4d9MF5FTD7aRyX0b",
+    "fileId": "13pURIBgVAr5IXXRCu0AYN",
     "sync": false
   }
 ]

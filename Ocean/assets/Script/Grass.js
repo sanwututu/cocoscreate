@@ -27,15 +27,15 @@ cc.Class({
     onLoad () {
         //
         this.branches.x = Math.floor((Math.random()*(this.maxX - this.minX))+this.minX);
-        this.branches.y = Math.floor((Math.random()*(this.maxTopY - this.minTopY))+this.minTopY);
+        this.branches.y = Math.floor((Math.random()*(this.maxTopY - this.minTopY))+this.minTopY)-10;
         this.branches.setScale(0.3);
         //
         this.bush.x = Math.floor((Math.random()*(this.maxX - this.minX))+this.minX);
-        this.bush.y = Math.floor((Math.random()*(this.maxBottomY - this.minBottomY))+this.minBottomY);
+        this.bush.y = Math.floor((Math.random()*(this.maxBottomY - this.minBottomY))+this.minBottomY)+50;
         this.bush.setScale(0.3);
         //
         this.strand.x = Math.floor((Math.random()*(this.maxX - this.minX))+this.minX);
-        this.strand.y = Math.floor((Math.random()*(this.maxBottomY - this.minBottomY))+this.minBottomY);
+        this.strand.y = Math.floor((Math.random()*(this.maxBottomY - this.minBottomY))+this.minBottomY)+50;
         this.strand.setScale(0.3);
         //
         this.chain.x = Math.floor((Math.random()*(this.maxX - this.minX))+this.minX);

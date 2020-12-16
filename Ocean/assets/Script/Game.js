@@ -9,6 +9,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        bloopAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
         cursor:cc.Node,
         whale:cc.Node,
         rockMgrNode:cc.Node,
@@ -183,7 +187,7 @@ cc.Class({
         let cursorPos = this.cursor.getPosition();
         let camera =this.mainCamera.getComponent(cc.Camera);
         if(seaAngel.length <1){
-            if(camera.zoomRatio >1.2){
+            if(camera.zoomRatio >1){
                 camera.zoomRatio -= 0.01;
             }else{
                 this.gameOver.active = true;
@@ -207,10 +211,10 @@ cc.Class({
                     this.foodDistance = 0;
                     return;
                 }
-                camera.zoomRatio = 2.4 - this.foodDistance;
+                camera.zoomRatio = 2 - this.foodDistance;
             }
             else{
-                camera.zoomRatio = 2.4 - (distance/1000);
+                camera.zoomRatio = 2 - (distance/1000);
             }
         }
 
@@ -231,7 +235,9 @@ cc.Class({
             //判断海天使是否碰到食物
             let rcSea = seaAngel[i].getBoundingBoxToWorld();
             if(rcSea.intersects(rcFood)){
-                console.log('碰到了');
+                //console.log('碰到了');
+                //播放音效
+                this.current = cc.audioEngine.play(this.bloopAudio, false, 1);
                 //移除食物
                 let removeSelf = cc.removeSelf();
                 food[0].runAction(removeSelf);
@@ -274,10 +280,6 @@ cc.Class({
         //鲸鱼控制
         this.whaleControl(dt);
         //
-        // //垃圾控制
-        // let rubbish = this.rubbishMgrNode.children;
-        // let rubbishBody = rubbish[0].getComponent(cc.RigidBody);
-        // rubbishBody.linearVelocity  = cc.v2(-20,0);
         //海天使控制
         this.seaAngelControl();
     },

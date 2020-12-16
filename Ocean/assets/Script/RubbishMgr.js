@@ -27,10 +27,11 @@ cc.Class({
             let rubbishNode = cc.instantiate(this.rubbishPre1);
             rubbishNode.parent = this.node;
     
-            rubbishNode.x = Math.floor((Math.random()*(100))+600);
-            rubbishNode.y = Math.floor((Math.random()*(500))-250);
+            rubbishNode.x = Math.floor((Math.random()*(100))+500);
+            rubbishNode.y = Math.floor((Math.random()*(400))-250);
+            rubbishNode.angle = Math.floor(Math.random()* 180);
             let rubbishBody = rubbishNode.getComponent(cc.RigidBody);
-            let speed = -20*this.dir;
+            let speed = -30*this.dir;
             rubbishBody.linearVelocity  = cc.v2(speed,2);
         // }
     },
@@ -40,10 +41,10 @@ cc.Class({
         let speed = -20*this.dir;
         for(let i = 0;i<rubbish.length;i++){
             let rubbishBody = rubbish[i].getComponent(cc.RigidBody);
-            if(rubbish[i].x <-600){
+            if(rubbish[i].x < -500){
                 this.dir = -1;
             }
-            else if(rubbish[i].x > 600){
+            else if(rubbish[i].x > 500){
                 this.dir = 1;            
             }
             rubbishBody.linearVelocity  = cc.v2(speed,0);

@@ -257,8 +257,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        1.821,
-        -3.295,
+        0,
+        0,
         0,
         0,
         0,
@@ -386,8 +386,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        4.463,
-        -6.644,
+        0,
+        0,
         0,
         0,
         0,
@@ -518,8 +518,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        3.604,
-        -92.396,
+        0,
+        0,
         0,
         0,
         0,
@@ -1025,12 +1025,12 @@
     "chain": {
       "__id__": 14
     },
-    "maxTopY": 300,
-    "minTopY": 250,
+    "maxTopY": 220,
+    "minTopY": 180,
     "maxBottomY": -250,
     "minBottomY": -300,
-    "maxX": 600,
-    "minX": -600,
+    "maxX": 400,
+    "minX": -500,
     "_id": ""
   },
   {

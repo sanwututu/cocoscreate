@@ -35,23 +35,23 @@ cc.Class({
             
             this.topRock.y = Math.floor((Math.random()*(100))+10);
             if(this.topRock.x < 0){
-                this.topRock.y = Math.floor((Math.random()*(50))+10);
-                this.topRock.x = Math.floor((Math.random()*(-100))-550);
+                this.topRock.y = Math.floor((Math.random()*(100))+10);
+                this.topRock.x = Math.floor((Math.random()*(-50))-550);
                 return;
             }
             this.topRock.x = Math.floor((Math.random()*(50))+550);
         }
         if(this.bottomRock.y > -300){
-            this.bottomRock.y = Math.floor((Math.random()*(-100))+10);
+            this.bottomRock.y = Math.floor((Math.random()*(-150))+10);
             if(this.bottomRock.x < 0){
                 
-                this.bottomRock.x = Math.floor((Math.random()*(-100)-550));
+                this.bottomRock.x = Math.floor((Math.random()*(-50)-550));
                 return;
             }
             this.bottomRock.x = Math.floor((Math.random()*(50))+550);
         }
-        this.topRock.setScale(Math.floor((Math.random()*2)));
-        this.bottomRock.setScale(Math.floor((Math.random()*1.5) + 0.5));
+        this.topRock.setScale(Math.floor((Math.random()*1.5)));
+        this.bottomRock.setScale(Math.floor((Math.random()*1) + 0.5));
         this.topRock.angle = Math.floor(Math.random()* 180);
         this.bottomRock.angle = Math.floor(Math.random()* 180);
 

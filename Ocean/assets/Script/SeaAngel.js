@@ -9,6 +9,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        boomAudio: {
+            default: null,
+            type: cc.AudioClip
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -25,6 +29,7 @@ cc.Class({
     onCollisionEnter(other,self){
 
         if(other.tag === 3){
+            this.current = cc.audioEngine.play(this.boomAudio, false, 1);
             let removeSelf = cc.removeSelf();
             self.node.runAction(removeSelf);
             let canNode = cc.find("Canvas");

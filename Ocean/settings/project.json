@@ -102,5 +102,6 @@
     "live": {
       "enable": false
     }
-  }
+  },
+  "start-scene": "49da6af2-4f5e-4110-bd5c-8b715b7c3848"
 }

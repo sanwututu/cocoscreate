@@ -128,8 +128,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        1.472,
-        1072.318,
+        0,
+        705.689,
         0,
         0,
         0,
@@ -618,12 +618,12 @@
     "bottomRock": {
       "__id__": 8
     },
-    "maxTopY": 500,
-    "minTopY": 200,
-    "maxBottomY": -300,
-    "minBottomY": -500,
-    "maxX": 600,
-    "minX": -600,
+    "maxTopY": 350,
+    "minTopY": 250,
+    "maxBottomY": -250,
+    "minBottomY": -350,
+    "maxX": 450,
+    "minX": -450,
     "_id": ""
   },
   {
